@@ -1,0 +1,4 @@
+
+public enum Result {
+	INVALID_LOCATION, LOCATION_NOT_EMPTY, GAME_NOT_OVER, X_WON, O_WON, TIE
+}
