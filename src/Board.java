@@ -11,7 +11,7 @@ public class Board
 		for(int row = 0; row < 3; row++)
 		{
 			for(int col = 0; col < 3; col++)
-				board[row][col] = Symbol.EMPTY1;	// space: ' '
+				board[row][col] = Symbol.EMPTY;	// space: ' '
 		}
 	}
 	
@@ -100,7 +100,7 @@ public class Board
 	
 	public boolean isEmpty(Location loc) 
 	{
-		if(board[loc.getRow()][loc.getCol()] == Symbol.EMPTY1)
+		if(board[loc.getRow()][loc.getCol()] == Symbol.EMPTY)
 			return true;
 			
 		else
@@ -112,7 +112,7 @@ public class Board
 	{
 		char first = board[row][0];
 		
-		if(first == Symbol.EMPTY1)
+		if(first == Symbol.EMPTY)
 			return Result.GAME_NOT_OVER;
 		
 		for (int count = 1; count < 3; count++)
@@ -133,7 +133,7 @@ public class Board
 	{
 		char first = board[0][col];
 		
-		if(first == Symbol.EMPTY1)
+		if(first == Symbol.EMPTY)
 			return Result.GAME_NOT_OVER;
 		
 		for (int count = 1; count < 3; count++)
@@ -154,7 +154,7 @@ public class Board
 	{
 		char first = board[0][0];
 		
-		if(first == Symbol.EMPTY1)
+		if(first == Symbol.EMPTY)
 			return Result.GAME_NOT_OVER;
 		
 		for (int count = 0; count < 3; count++)
@@ -173,7 +173,7 @@ public class Board
 	{
 		char first = board[2][0];
 		
-		if(first == Symbol.EMPTY1)
+		if(first == Symbol.EMPTY)
 			return Result.GAME_NOT_OVER;
 		
 		int inc = 0;
